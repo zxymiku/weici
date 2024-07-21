@@ -1,5 +1,8 @@
-# run_another_file.py
 import subprocess
+import time
+scripts = ["screenshot.py", "subjiectre.py", "sql.py", "answershot.py"]
 
-# 使用subprocess运行另一个Python文件
-subprocess.run(['python', 'screen.py'])
+while True:
+    for script in scripts:
+        subprocess.run(["python", script])
+        time.sleep(1)
