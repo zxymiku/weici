@@ -1,6 +1,6 @@
 import subprocess
 import time
-scripts = ["screenshot.py", "subjiectre.py", "sql.py", "answershot.py"]
+scripts = ["screenshot.py", "subjectre.py", "sql.py", "answershot.py"]
 
 while True:
     for script in scripts:
