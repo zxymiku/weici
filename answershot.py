@@ -35,6 +35,13 @@ def capture_and_ocr(window_position, relative_coordinates):
         results.append(text.strip())
     return results
 
+def subject():
+    return "some_subject_value"
+
+def row():
+    return "some_row_value"
+
+
 def is_similar(str1, str2, threshold=0.8):
     similarity = difflib.SequenceMatcher(None, str1, str2).ratio()
     return similarity >= threshold
@@ -62,7 +69,6 @@ def main():
     else:
         print("没有匹配的坐标")
 
-# 执行主函数
 if __name__ == "__main__":
     main()
 
