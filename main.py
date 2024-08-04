@@ -1,8 +1,9 @@
 import subprocess
-import time
-scripts = ["screenshot.py", "subjectre.py", "sql.py", "answershot.py"]
-
-while True:
-    for script in scripts:
-        subprocess.run(["python", script])
-        time.sleep(1)
+import importlib
+import answershot
+import sql
+subprocess.run(['python', 'shoot.py'])
+subject_value = answer.subject()
+subprocess.run(['python', 'sql.py', str(subject_value)])
+importlib.reload(answer)
+row_value = answer.row()
