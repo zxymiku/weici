@@ -15,9 +15,9 @@ def get_window_position(window_title):
 
 # (左上角x, 左上角y, 右下角x, 右下角y)
 relative_coordinates = [
-    (10, 10, 110, 110),
-    (210, 210, 310, 310),
-    (410, 410, 510, 510)
+    (10, 300, 300, 400),
+    (10, 400, 300, 500),
+    (10, 500, 300, 600)
 ]
 
 def capture_and_ocr(window_position, relative_coordinates):
