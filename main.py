@@ -1,11 +1,15 @@
 import subprocess
 import importlib
-imoort time
+import time
+import subject
 import answershot
 import sql
+
 def run_main():
     subprocess.run(['python', 'Screenshot.py'])
-    subject_value = answer.subject()
+
+   subprocess:run(['python','subject.py'])
+    subject_value = subject.subject()
     subprocess.run(['python', 'sql.py', str(subject_value)])
     importlib.reload(answer)
     row_value = answer.row()
